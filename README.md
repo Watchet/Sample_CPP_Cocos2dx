@@ -76,17 +76,16 @@ void cocos_android_app_init (JNIEnv* env, jobject thiz) {
 
 ####六：配置AndroidManifest.xml 添加框架需要的权限
 
-<pre>
-<uses-permission android:name="android.permission.INTERNET" />
 
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+uses-permission android:name="android.permission.INTERNET" 
 
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" 
 
-<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+uses-permission android:name="android.permission.ACCESS_WIFI_STATE" 
 
-<uses-permission  android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
-</pre>
+uses-permission android:name="android.permission.RESTART_PACKAGES" 
+
+uses-permission  android:name="android.permission.KILL_BACKGROUND_PROCESSES" 
 
 ####七：在JAVA层初始化AnySDK Framework框架
 修改项目下/proj.android/src/org/cocos2dx/cpp/AppActivity.java文件：
